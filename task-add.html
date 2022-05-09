@@ -73,7 +73,7 @@
 
             <ul class="menu-inner py-1">
                 <!-- Dashboard -->
-                <li class="menu-item active">
+                <li class="menu-item">
                     <a href="./dashboard.html" class="menu-link">
                         <span class="iconify menu-icon" data-icon="ic:round-dashboard"></span>
                         <div data-i18n="Dashboard">Dashboard</div>
@@ -82,10 +82,10 @@
 
                 <!-- Content Management -->
                 <li class="menu-header small text-uppercase">
-                    <span class="menu-header-text">Project Management</span>
+                    <span class="menu-header-text">Content Management</span>
                 </li>
 
-                <li class="menu-item">
+                <li class="menu-item active">
                     <a href="./projects.html" class="menu-link">
                         <span class="iconify menu-icon" data-icon="ic:round-work"></span>
                         <div data-i18n="Projects">Projects</div>
@@ -128,12 +128,12 @@
                     </a>
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="./ticket-active.html" class="menu-link">
+                            <a href="./notes.html" class="menu-link">
                                 <div data-i18n="All Categories">View</span></div>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="./form.html" class="menu-link">
+                            <a href="./note-add.html" class="menu-link">
                                 <div data-i18n="Add Cateogry">Add Note</div>
                             </a>
                         </li>
@@ -141,7 +141,7 @@
                 </li>
 
                 <li class="menu-item">
-                    <a href="./knowladge.html" class="menu-link">
+                    <a href="./projects.html" class="menu-link">
                         <span class="iconify menu-icon" data-icon="fluent:brain-circuit-24-filled"></span>
                         <div data-i18n="Projects">Knowladge</div>
                     </a>
@@ -221,141 +221,47 @@
                 <!-- Content -->
 
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <div class="row">
-                        <div class="col-6 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-title d-flex align-items-start justify-content-between">
-                                        <div class="avatar flex-shrink-0">
-                                            <div class="p-2 rounded d-inline-flex align-items-center justify-content-center bg-primary text-white">
-                                                <span class="iconify" data-icon="ic:round-work" style="width: 1.4em;height:1.4em"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn p-0"
-                                                type="button"
-                                                id="cardOpt4"
-                                                data-bs-toggle="dropdown"
-                                                aria-haspopup="true"
-                                                aria-expanded="false"
-                                            >
-                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                                                <a class="dropdown-item" href="./projects.html">View</a>
-                                                <a class="dropdown-item" href="https://wa.me/6289671052050">Add New</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="d-block mb-1">Projects</span>
-                                    <h3 class="card-title text-nowrap mb-2 fw-bolder fs-1">10</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-title d-flex align-items-start justify-content-between">
-                                        <div class="avatar flex-shrink-0">
-                                            <div class="p-2 rounded d-inline-flex align-items-center justify-content-center bg-primary text-white">
-                                                <span class="iconify" data-icon="ion:ticket" style="width: 1.4em;height:1.4em"></span>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown">
-                                            <button
-                                                class="btn p-0"
-                                                type="button"
-                                                id="cardOpt4"
-                                                data-bs-toggle="dropdown"
-                                                aria-haspopup="true"
-                                                aria-expanded="false"
-                                            >
-                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                                                <a class="dropdown-item" href="./ticket-active.html">Active Ticket <span class="badge badge-center rounded-pill bg-primary ms-2">1</span></a>
-                                                <a class="dropdown-item" href="./ticket-add.html">Add New</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="d-block mb-1">Ticket</span>
-                                    <h3 class="card-title text-nowrap mb-2 fw-bolder fs-1">10</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    
                     <div class="py-3">
-                        <h4># Your Ticket</h4>
-                        <div class="card">
-                            <div class="table-responsive text-nowrap">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Subject</th>
-                                            <th>Project</th>
-                                            <th>Priority</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-border-bottom-0">
-                                        <tr>
-                                            <td class="border-0"><strong>TICEMA675243</strong></td>
-                                            <td class="border-0">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sunt, corporis molestias.
-                                                <br>
-                                                <span class="text-secondary" style="font-size: 12px;">08/02/21, 14:23 WIB</span>
-                                            </td class="border-0">
-                                            <td class="border-0">Project 2</td>
-                                            <td class="border-0"><span class="badge bg-label-danger">High</span></td>
-                                            <td class="border-0"><span class="badge bg-label-info me-1">Answered</span></td>
-                                            <td class="border-0"><a href="./ticket-view.html" class="btn btn-primary">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="10">
-                                                <div class="card bg-light">
-                                                    <div class="card-header bg-label-secondary py-1">
-                                                        Latest Reply
-                                                    </div>
-                                                    <div class="card-body py-3">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet officia</p>
-                                                        <h6>- OM JT</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="border-0"><strong>TICEMA675123</strong></td>
-                                            <td class="border-0">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sunt, corporis molestias.
-                                                <br>
-                                                <span class="text-secondary" style="font-size: 12px;">08/02/21, 14:23 WIB</span>
-                                            </td class="border-0">
-                                            <td class="border-0">Project 1</td>
-                                            <td class="border-0"><span class="badge bg-label-danger">High</span></td>
-                                            <td class="border-0"><span class="badge bg-label-secondary me-1">Waiting</span></td>
-                                            <td class="border-0"><a href="./ticket-view.html" class="btn btn-primary">View</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="10">
-                                                <div class="card bg-light">
-                                                    <div class="card-header bg-label-secondary py-1">
-                                                        Latest Reply
-                                                    </div>
-                                                    <div class="card-body py-3">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet officia</p>
-                                                        <h6>- You</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <a href="./project-view.html" class="d-inline-flex align-items-center gap-2"><span class="iconify fs-2" data-icon="ion:arrow-back-circle"></span> Back</a>
                         </div>
+                        <img src="./assets/img/backgrounds/18.jpg" alt="" class="mb-3 d-block w-100 rounded" style="max-height:20em; object-fit:cover">
+                        <div class="d-flex flex-column flex-md-row gap-2 align-items-start justify-content-between mb-3">
+                            <div>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-label-info">ON GOING</span>
+                                </div>
+                                <h1>Project Name</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem et, minus aliquid voluptates qui eos voluptate culpa minima obcaecati velit eaque asperiores porro ducimus natus, quam cumque perspiciatis debitis mollitia?</p>
+                                <p>Kamis, 08 Mei 2022</p>
+                            </div>
+                            <a href="./note-add.html" class="btn btn-secondary d-inline-flex align-items-center gap-2 "><span class="iconify" data-icon="ic:round-sticky-note-2"></span> Notes</a>
+                        </div>
+                        <h4># Add New Task</h4>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Nama / Title Task</label>
+                                <input type="text" name="" id="subject" placeholder="Nama / Title Task" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Status Task</label> <br>
+                                <div class="form-check form-check-inline mt-3 p-3 rounded bg-label-secondary">
+                                    <input type="radio" name="status" id="subject" class="form-check-input" checked>
+                                    <label for="subject" class="form-check-label">Waiting</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 p-3 rounded bg-label-info">
+                                    <input type="radio" name="status" id="subject" class="form-check-input">
+                                    <label for="subject" class="form-check-label">On Going</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 p-3 rounded bg-label-success">
+                                    <input type="radio" name="status" id="subject" class="form-check-input">
+                                    <label for="subject" class="form-check-label">Completed</label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary d-flex align-items-center justify-content-center gap-2 w-100">Add Task <span class="iconify" data-icon="fluent:clipboard-task-list-ltr-24-filled"></span></button>
+                        </form>
                     </div>
                 </div>
                 <!-- / Content -->
